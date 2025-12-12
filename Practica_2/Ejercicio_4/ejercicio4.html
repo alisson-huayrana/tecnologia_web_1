@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 4 - Objeto Lugar Turístico</title>
+    <link rel="stylesheet" href="ejercicio4.css">
+</head>
+
+<body>
+    <a href="../index.html" class="volver-btn">Volver al Menú</a>
+    <div class="contenido-central">
+        <h1>Información de Lugar Turístico</h1>
+
+        <div id="infoLugar" class="info-bloque">
+            <h2>Propiedades Iniciales</h2>
+        </div>
+
+        <hr>
+
+        <h2>Cálculos del Objeto</h2>
+
+        <div class="calculos-container">
+            <div class="calculo">
+                <button onclick="mostrarPromedio()">Calcular Promedio</button>
+                <p class="resultado" id="promedioResultado">Promedio: N/A</p>
+            </div>
+
+            <div class="calculo">
+                <label for="descuento">Descuento (%):</label>
+                <input type="number" id="descuento" value="10" min="0" max="100">
+                <button onclick="aplicarMostrarDescuento()">Aplicar Descuento</button>
+                <p class="resultado" id="precioResultado">Precio Actual: N/A</p>
+            </div>
+        </div>
+    </div>
+    <script src="ejercicio4.js"></script>
+</body>
+
+</html>

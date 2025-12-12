@@ -1,0 +1,107 @@
+body {
+    font-family: "Poppins", sans-serif;
+    background-color: #fff0e5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5%;
+    margin: 0;
+}
+.contenido-central {
+    background-color: #ffffff;
+    padding: 15px;
+    width: 45%;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.contenido-central h1 {
+    color: #8B4513;
+}
+
+.volver-btn {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    background-color: #8B4513;
+    color: #FFFFFF;
+    padding: 10px 15px;
+    text-decoration: none;
+    border-radius: 8px;
+    font-size: 0.9em;
+    font-weight: 600;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.2s;
+}
+
+.volver-btn:hover {
+    background-color: #5c2e0d;
+    color: #FFFFFF;
+}
+
+button {
+    background-color: #8B4513;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #5c2e0d;
+}
+
+.nota {
+    font-size: 0.9em;
+    color: #381b07;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+.lista-resultados {
+    list-style: none; 
+    padding: 0;
+    margin-top: 20px;
+    max-height: 400px; 
+    overflow-y: auto; 
+    text-align: left;
+    border: 1px solid #cfd8dc;
+    border-radius: 8px;
+    background-color: #f5f5f5;
+}
+
+.lista-resultados li {
+    padding: 8px 15px;
+    border-bottom: 1px dashed #eceff1;
+    font-family: 'Consolas', monospace;
+    font-size: 1.05em;
+}
+
+.lista-resultados li:last-child {
+    border-bottom: none;
+}
+
+.fizzbuzz-item {
+    color: #bb3c3c;
+    font-weight: bold;
+    background-color: #fceff0;
+}
+
+.fizz-item {
+    color: #004d31;
+    background-color: #e2faf1; 
+}
+
+.buzz-item {
+    color: #25027d;
+    background-color: #f4f0fe;
+}

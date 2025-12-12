@@ -1,0 +1,136 @@
+body {
+    font-family: "Poppins", sans-serif;
+    background-color: #fbf8f1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5%;
+    margin: 0;
+}
+.contenido-central {
+    background-color: #ffffff;
+    padding: 15px;
+    width: 50%;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.contenido-central h1 {
+    color: #DAA520;
+}
+
+.contenido-central h2 {
+    color: #DAA520;
+}
+
+.volver-btn {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    background-color: #DAA520;
+    color: #FFFFFF;
+    padding: 10px 15px;
+    text-decoration: none;
+    border-radius: 8px;
+    font-size: 0.9em;
+    font-weight: 600;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.2s;
+}
+
+.volver-btn:hover {
+    background-color: #5f470c;
+    color: #FFFFFF;
+}
+
+button {
+    background-color: #DAA520;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #5f470c;
+}
+
+.info-bloque {
+    background-color: #f4f1e8;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    text-align: left;
+    border: 1px solid #eee0b7;
+}
+
+.info-bloque h2 {
+    color: #DAA520; 
+    margin-top: 0;
+    border-bottom: 1px solid #eee0b7;
+    padding-bottom: 8px;
+}
+
+.calculos-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.calculo {
+    flex: 1;
+    padding: 15px;
+    border: 1px solid #DAA520;
+    border-radius: 8px;
+    background-color: #f4f1e8;
+    text-align: center;
+}
+
+.calculo button {
+    width: 100%;
+    margin-bottom: 10px;
+    background-color: #DAA520; 
+}
+
+.calculo button:hover {
+    background-color: #5f470c;
+}
+
+#descuento {
+    width: calc(100% - 20px);
+    margin-bottom: 15px;
+}
+
+hr {
+    border: 0;
+    border-top: 1px dashed #DAA520;
+    margin: 25px 0;
+}
+p{
+    color:#5c4303;
+    font-size: 1.1em;
+    font-weight: 600;
+}
+label{
+    color:#5c4303;
+    font-size: 1.1em;
+    font-weight: 600;
+}
+input[type="number"] {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
