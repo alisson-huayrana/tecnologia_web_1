@@ -39,7 +39,7 @@
     <script>
         async function cargarDatosTurismo() {
             try {
-                const url = 'https://github.com/alisson-huayrana/tecnologia_web_1/blob/main/Practica_3/Parte_2/turismo.json'; 
+                const url = 'https://raw.githubusercontent.com/alisson-huayrana/tecnologia_web_1/blob/main/Practica_3/Parte_2/turismo.json'; 
                 const response = await fetch(url);
                 if (!response.ok) {
                     throw new Error(`Error HTTP: ${response.status}`);
