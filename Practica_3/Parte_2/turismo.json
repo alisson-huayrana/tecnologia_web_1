@@ -1,0 +1,22 @@
+{
+  "Lugar": "Parque Nacional Torotoro",
+  "ubicacion": "Potosí, Bolivia",
+  "descripcion": "Un parque con formaciones rocosas, cavernas y fósiles de dinosaurios, ideal para el ecoturismo y la aventura.",
+  "actividades": [
+    "Senderismo",
+    "Exploración de cavernas",
+    "Observación de fósiles",
+    "Observación de aves"
+  ],
+  "gastronomia": [
+    "Plato de la casa (Chajchu)",
+    "Fricasé",
+    "Sopa de maní"
+  ],
+  "precioEntrada": 100,
+  "moneda": "BOB (Bolivianos)",
+  "horarios": {
+    "Lunes-viernes": "08:00 - 17:00",
+    "sabado-domingo": "07:00 - 18:00"
+  }
+}
