@@ -1,0 +1,99 @@
+/* Establecer Dosis como fuente principal para el cuerpo del texto */
+body {
+    font-family: 'Dosis', sans-serif;
+    background-color: #F2F2F2;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    line-height: 1.2;
+}
+
+/* Aplicar Alegreya a todos los títulos y subtítulos */
+h1, h2, h3 {
+    font-family: 'Alegreya', serif;
+    font-weight: 500;
+}
+
+#header-lugar {
+    background-color: #291B0A;
+    color: white;
+    padding: 30px 0;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#header-lugar h1 {
+    margin: 0;
+    font-size: 2.2em;
+}
+
+#header-lugar p {
+    font-size: 1.1em;
+    margin: 5px 0;
+}
+
+.contenedor {
+    max-width: 1000px;
+    margin: 20px auto;
+    padding: 0 20px;
+}
+
+h2 {
+    color: #291B0A;
+    border-bottom: 2px solid #eee;
+    padding-bottom: 5px;
+    margin-top: 30px;
+    font-size: 1.95em;
+}
+p{
+    font-size: 1.5em;
+}
+
+/* --- Cards de Actividades y Gastronomía --- */
+.cards-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.card {
+    flex: 1;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.05);
+    border-left: 5px solid #503513; /* Color de énfasis */
+}
+
+.card h3 {
+    color: #503513;
+    margin-top: 0;
+    font-size: 1.6em;
+}
+
+.card ul {
+    list-style-type: disc;
+    padding-left: 20px;
+    font-size: 1.15em;
+}
+
+/* --- Tabla de Horarios --- */
+.horarios-table {
+    width: 50%;
+    margin: 20px 0;
+    border-collapse: collapse;
+}
+
+.horarios-table th, .horarios-table td {
+    border: 1px solid #291B0A;
+    padding: 10px;
+    text-align: left;
+    background-color: #f7eee2;
+    font-size: 1.2em;
+}
+
+.horarios-table th {
+    background-color: #291B0A;
+    color: white;
+}

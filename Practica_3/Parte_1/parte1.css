@@ -1,0 +1,64 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fffdfb;
+    color: #333;
+    width: 68%;
+    margin: 0 auto;
+    padding: 100px 0;
+}
+h1, h2 {
+    font-family: 'Consolas', monospace;
+    color: #3f2a10;
+}
+/*HEADER*/
+header {
+    background-color: #FFF0DC;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: 3px solid #4c3111;
+}
+h1 {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-top: 0;
+}
+header p {
+    font-size: 1.1rem;
+    font-weight: 500;
+    text-align: center;
+}
+/*SECCIÓN*/
+section article {
+    width: 27%; 
+    float: left;
+    margin: 1.5%;
+    padding: 15px;
+    border: 1px solid #B6B09F;
+    border-radius: 5px;
+    background-color: #ddd8c8;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    min-height: 250px;
+}
+h2 {
+    font-size: 1.5rem;
+    letter-spacing: -1px;
+    border-bottom: 1px solid #524a36;
+    padding-bottom: 5px;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+section p {
+    margin: 5px 0;
+    font-size: 0.95em;
+}
+section ul {
+    margin-top: 5px;
+    padding-left: 12%;
+    list-style-type: square;
+}
+section::after {
+    content: "";
+    display: table;
+    clear: both;
+}

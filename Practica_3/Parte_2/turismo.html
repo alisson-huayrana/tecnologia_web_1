@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Datos Turísticos de Torotoro</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400..900;1,400..900&family=Dosis:wght@200..800&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="turismo.css">
+</head>
+<body>
+
+    <header id="header-lugar">
+        </header>
+
+    <main class="contenedor">
+        <section id="descripcion-section">
+            </section>
+
+        <div class="cards-container">
+            <article id="actividades-card" class="card">
+                <h3>Actividades Disponibles</h3>
+                <ul id="lista-actividades"></ul>
+            </article>
+
+            <article id="gastronomia-card" class="card">
+                <h3>Gastronomía Local</h3>
+                <ul id="lista-gastronomia"></ul>
+            </article>
+        </div>
+
+        <section id="horarios-section">
+            </section>
+    </main>
+
+    <script>
+        async function cargarDatosTurismo() {
+            try {
+                const url = 'https://github.com/alisson-huayrana/tecnologia_web_1/blob/main/Practica_3/Parte_2/turismo.json'; 
+                const response = await fetch(url);
+                if (!response.ok) {
+                    throw new Error(`Error HTTP: ${response.status}`);
+                }
+                const datosTurismo = await response.json();
+                mostrarDatos(datosTurismo);
+            } catch (error) {
+                console.error("No se pudo cargar o procesar el JSON:", error);
+                document.querySelector('main').innerHTML = `<p class="error-msg">Error al cargar la información turística. Revise la consola.</p>`;
+            }
+        }
+
+        function mostrarDatos(datos) {
+            
+            const header = document.getElementById('header-lugar');
+            header.innerHTML = `
+                <h1>${datos.Lugar}</h1>
+                <p>Ubicación: <strong>${datos.ubicacion}</strong></p>
+                <p>Precio de Entrada: <strong>${datos.precioEntrada} ${datos.moneda}</strong></p>
+            `;
+            document.getElementById('descripcion-section').innerHTML = `
+                <h2>Descripción</h2>
+                <p>${datos.descripcion}</p>
+            `;
+
+            const listaActividades = document.getElementById('lista-actividades');
+            datos.actividades.forEach(actividad => {
+                const li = document.createElement('li');
+                li.textContent = actividad;
+                listaActividades.appendChild(li);
+            });
+
+            const listaGastronomia = document.getElementById('lista-gastronomia');
+            datos.gastronomia.forEach(plato => {
+                const li = document.createElement('li');
+                li.textContent = plato;
+                listaGastronomia.appendChild(li);
+            });
+            
+            const horariosSection = document.getElementById('horarios-section');
+            const horarios = datos.horarios;
+            horariosSection.innerHTML = `
+                <h2>Horarios de Atención</h2>
+                <table class="horarios-table">
+                    <tr><th>Días</th><th>Horario</th></tr>
+                    <tr><td>Lunes a Viernes</td><td>${horarios["Lunes-viernes"]}</td></tr>
+                    <tr><td>Sábado y Domingo</td><td>${horarios["sabado-domingo"]}</td></tr>
+                </table>
+            `;
+        }
+
+        cargarDatosTurismo();
+    </script>
+</body>
+</html>
